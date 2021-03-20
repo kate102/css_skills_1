@@ -18,6 +18,24 @@ ul {
     list-style: none; /* no bullets on the list*/
 }
 
+a {
+    color: #333;
+    text-decoration: none; /* removes the underline on links */
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0; /* Add margin back in because it is removed above */
+}
+
+img {
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -36,4 +54,12 @@ ul {
     color: #fff;
     padding: 10px 20px;
     margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #28a745 2px solid;
+}
+
+.navbar ul {
+    display: flex; /* Now we are horizontal */
 }

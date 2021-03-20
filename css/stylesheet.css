@@ -74,3 +74,45 @@ img {
     position: relative;
     color: #fff;
 }
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+/* This makes the background image a bit darker */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2); 
+}
+
+.hero * {
+    z-index: 10;
+}
+
+.icons { 
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: #28a745;
+    color: #fff;
+    padding: 1rem; /* Relative font size */
+    border-radius: 50%;
+    margin-bottom: 15;
+}

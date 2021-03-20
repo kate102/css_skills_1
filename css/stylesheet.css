@@ -57,9 +57,20 @@ img {
 }
 
 .navbar a:hover {
-    border-bottom: #28a745 2px solid;
+    border-bottom: #28a745 2px solid; /* Underline when hovering over the list item */
 }
 
 .navbar ul {
     display: flex; /* Now we are horizontal */
+}
+
+.narbar .logo {
+    font-weight: 400;
+}
+
+.hero {
+    background: url('../images/showcase.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    position: relative;
+    color: #fff;
 }

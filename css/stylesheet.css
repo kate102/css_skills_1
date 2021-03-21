@@ -199,6 +199,10 @@ img {
     width: 100%
 }
 
+.flex-columns.flex-reverse .row {
+        flex-direction: row-reverse;
+}
+
 .flex-columns .column {
     display: flex;  
     flex-direction: column;
@@ -237,6 +241,23 @@ img {
 .flex-columns p {
     margin: 20px 0;
 }
+/* Flex grid -  made the images into a 2x4 table */
+.flex-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px ;
+}
+
+.cases img:hover {
+    opacity: 0.7;
+}
+
 /* Section Headers - text in a column, in the center */
 .section-header {
     display: flex;
@@ -256,15 +277,3 @@ img {
     padding: 20px 20px 40px;
 }
 
-/* Flex grid -  made the images into a 2x4 table */
-.flex-grid .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.flex-grid .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0;
-}

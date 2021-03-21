@@ -151,6 +151,8 @@ img {
     opacity: 0.7; /* Button dims whenhovered over */
 }
 
+/* Colour templates */
+
 .bg-primary {
     color: #fff;
     background: #28a745;
@@ -169,4 +171,25 @@ img {
 .bg-light {
     color: #333;
     background: #fff;
+}
+
+/* Flex Box Details */
+/* This centralises all of the flex items in the container */
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Space between the flex items */
+.flex-items > div {
+    padding: 20px;
+}
+
+.flex-columns .row {
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
 }

@@ -123,8 +123,8 @@ img {
     background-color: #28a745;
     color: #fff;
     padding: 1rem; /* Relative font size */
-    border-radius: 50%;
-    margin-bottom: 15;
+    border-radius: 50%; /* Circular */
+    margin-bottom: 15px;
 }
 
 .text-primary {
@@ -148,27 +148,27 @@ img {
 }
 
 .btn:hover {
-    opacity: 0.7; /* Button dims whenhovered over */
+    opacity: 0.7; /* Button dims when hovered over */
 }
 
 /* Colour templates */
 
-.bg-primary {
+.bg-primary, .btn-primary {
     color: #fff;
     background: #28a745;
 }
 
-.bg-secondary {
+.bg-secondary, .btn-secondary {
     color: #fff;
     background: #0284d0;
 }
 
-.bg-dark {
+.bg-dark, .btn-dark {
     color: #fff;
     background: #333;
 }
 
-.bg-light {
+.bg-light, .btn-light {
     color: #333;
     background: #fff;
 }
@@ -182,7 +182,7 @@ img {
     height: 100%;
 }
 
-/* Space between the flex items */
+/* Space between the flex items, not that > is the direct div child */
 .flex-items > div {
     padding: 20px;
 }
@@ -198,7 +198,12 @@ img {
     display: flex;  
     flex-direction: column;
     flex-basis: 100%;
-    flex: 1;
+    flex: 1; /* will take up the entire height */
+}
+
+.flex-columns .column .column-1 ,
+.flex-columns .column .column-2 {
+    height: 100%
 }
 
 /* Section Headers - text in a column, in the center */

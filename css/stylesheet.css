@@ -66,6 +66,9 @@ img {
 
 .narbar .logo {
     font-weight: 400;
+    /* font-weight: 300; */
+    line-height: 1.2;
+    font-size: 55px;
 }
 
 .hero {
@@ -87,6 +90,7 @@ img {
 
 .hero .content h1 {
     font-size: 55px;
+    /* color: black; */
 }
 
 .hero .content p {
@@ -129,6 +133,10 @@ img {
 
 .text-primary {
     color: #4682b4
+    ;
+}
+.text-white {
+    color: whitesmoke
     ;
 }
 

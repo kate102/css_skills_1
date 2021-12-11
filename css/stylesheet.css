@@ -57,7 +57,7 @@ img {
 }
 
 .navbar a:hover {
-    border-bottom: #28a745 2px solid; /* Underline when hovering over the list item */
+    border-bottom: #4682b4 2px solid; /* Underline when hovering over the list item */
 }
 
 .navbar ul {
@@ -120,7 +120,7 @@ img {
 }
 
 .icons i {
-    background-color: #28a745;
+    background-color: #4682b4;
     color: #fff;
     padding: 1rem; /* Relative font size */
     border-radius: 50%; /* Circular */
@@ -128,7 +128,8 @@ img {
 }
 
 .text-primary {
-    color: #28a745;
+    color: #4682b4
+    ;
 }
 
 .text-secondary {
@@ -142,7 +143,7 @@ img {
     display: inline-block;
     padding: 10px 30px;
     color: #fff;
-    background-color: #28a745;
+    background-color: #4682b4;
     border: none;
     border-radius: 5px; /* makes the edges curved */
 }
@@ -304,7 +305,7 @@ img {
 }
 
 .callback-form input:focus {
-    outline-color: #28a745;
+    outline-color: #4682b4;
 }
 
 .callback-form .btn {
@@ -328,7 +329,7 @@ img {
 }
 
 .footer a:hover {
-    color: #28a745;
+    color: #4682b4;
 }
 
 .footer .social {

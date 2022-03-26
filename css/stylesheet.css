@@ -23,7 +23,12 @@ a {
     text-decoration: none; /* removes the underline on links */
 }
 
-h1, h2 {
+h1 {
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+h2 {
     font-weight: 300;
     line-height: 1.2;
 }
@@ -289,6 +294,22 @@ img {
 }
 
 .section-header h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+/* Section Headers - text in a column, in the left */
+
+.section-header-left h1, h2 {
+    display: flex;
+    padding: 30px;
+    flex-direction: column; 
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.section-header-left h1 {
     font-size: 40px;
     margin: 20px 0;
 }

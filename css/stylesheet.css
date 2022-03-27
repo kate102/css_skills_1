@@ -469,9 +469,9 @@ img {
 }
 
 .education img {
-    /* border-radius: 50%; */
-    /* width: 80%;
-    height: 30%; */
+    border-radius: 50%; 
+    max-width: 30%;
+    height: auto;
 }
 
 .education h2 {
@@ -534,3 +534,45 @@ img {
 .footer .social {
     margin-right: 30px;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    background-color: teal;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-family: ;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }

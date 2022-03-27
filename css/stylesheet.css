@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #fff;
-    color: #333;
+    background: #333;
+    color: #fff;
     line-height: 1.6;
 }
 
@@ -40,6 +40,7 @@ p {
 img {
     width: 100%;
 }
+
  /* Navigation */
 .navbar {
     display: flex;
@@ -95,7 +96,7 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: teal;
   color: black;
 }
 
@@ -294,6 +295,7 @@ img {
 .flex-columns h2 {
     font-size: 40px;
     font-weight: 100;
+    margin-bottom: 10px;
 }
 
 .flex-columns h4 {
@@ -467,7 +469,16 @@ img {
 }
 
 .education img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    /* width: 80%;
+    height: 30%; */
+}
+
+.education h2 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: teal;
 }
 
 /* Call back form */

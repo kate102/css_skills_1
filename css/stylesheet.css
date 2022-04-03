@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #333;
     color: #fff;
     line-height: 1.6;
@@ -26,6 +26,7 @@ a {
 h1 {
     font-weight: 500;
     line-height: 1.8;
+    font-size: 50px;
 }
 
 h2 {
@@ -448,9 +449,22 @@ img {
     margin: 20px 0;
 }
 
+.h3 {
+    font-family: "Trebuchet MS";
+    font-size: 20px;   
+}
+.section-header h3 {
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    font-weight: lighter;
+    font: green;
+}
+
 /* Section Headers - text in a column, in the left */
 
-.section-header-left h1, h2 {
+.section-header-left h1, h2, h3 {
     display: flex;
     padding: 30px;
     flex-direction: column; 
@@ -460,8 +474,27 @@ img {
 }
 
 .section-header-left h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
+}
+
+.section-header-left h2 {
+    font-language-override: unset;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 30px;
+
+    font-weight: bolder;
+    margin: 0;
+    font-style: italic;
+
+}
+
+.section-header-left h3 {
+    font-size: 20px;
+    margin: 10;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: monospace;
 }
 
 .section-padding {

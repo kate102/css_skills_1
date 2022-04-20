@@ -14,10 +14,6 @@ body {
     line-height: 1.6;
 }
 
-ul {
-    list-style: none; /* no bullets on the list*/
-}
-
 a {
     color: #333;
     text-decoration: none; /* removes the underline on links */
@@ -39,47 +35,11 @@ p {
 }
 
 img {
-    width: 100%;
+    max-width: 100%; /* image will responsively shrink but not expand larger than the original */
+    height: auto;
 }
 
- /* Navigation */
-.navbar {
-    display: flex;
-    align-items: right;
-    justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    opacity: 0.8; /* Slightly  see through */
-    width: 100%;
-    height: 70px;
-    /* position: fixed; */
-    top: 0px;
-    padding: 0 30px;
-    position: absolute;
-    right: 0px; /* nav bar colour spans all of the width */
-}
-
-.navbar a {
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 5px;
-}
-
-.navbar a:hover {
-    border-bottom: #4682b4 2px solid; /* Underline when hovering over the list item */
-}
-
-.navbar ul {
-    display: flex; /* Now we are horizontal */
-}
-
-.narbar .logo {
-    font-weight: 400;
-    /* font-weight: 300; */
-    line-height: 1.5;
-    font-size: 55px;
-}
-/* Add a black background color to the top navigation */
+/* Add a black background colour to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -143,7 +103,8 @@ img {
 
 .hero .content p {
     font-size: 23px;
-    max-width: 600px;
+    /* max-width: 600px; */
+    max-width: 100%;
     margin: 20px 0 30px;
 }
 
@@ -153,7 +114,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.2); 
 }
@@ -264,7 +225,7 @@ img {
     display: flex;  
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%
+    max-width: 100%
 }
 
 .flex-columns.flex-reverse .row {
@@ -284,7 +245,7 @@ img {
 }
 
 .flex-columns .img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover; /* This stops the image stretching weirdly */
 }
@@ -335,109 +296,7 @@ img {
     height: 100%;
 }
 
-/* Space between the flex items, not that > is the direct div child */
-.flex-items > div {
-    padding: 20px;
-}
 
-.flex-columns .row {
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%
-}
-
-.flex-columns.flex-reverse .row {
-        flex-direction: row-reverse;
-}
-
-.flex-columns .column {
-    display: flex;  
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1; /* will take up the entire height */
-}
-
-.flex-columns .column .column-1 ,
-.flex-columns .column .column-2,
-.flex-columns .column .column-4 {
-    height: 100%;
-}
-
-
-/* .flex-columns .column .column-about
-{
-    height: 75%;
-} */
-.flex-columns .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This stops the image stretching weirdly */
-}
-
-.flex-columns .column-2,
-.flex-columns .column-about
- {
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 30px;
-}
-
-.flex-columns .column-75
- {
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
-    padding: 30px;
-    width: 75%;
-}
-.flex-columns .column-25
- {
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 30px;
-    width: 25%;
-}
-
-.flex-columns h2 {
-    font-size: 40px;
-    font-weight: 100;
-}
-
-/* .flex-columns h4 {
-    margin-bottom: 10px;
-} */
-
-.flex-columns p {
-    margin: 20px 0;
-}
-/* Flex grid -  made the images into a 2x4 table */
-.flex-grid .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.flex-grid .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px ;
-}
-.flex-grid-thirds .column {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 15px ;
-}
-
-.cases img:hover {
-    opacity: 0.7;
-}
 /* Section Headers - text in a column, in the center */
 .section-header {
     display: flex;
@@ -481,7 +340,7 @@ img {
 
 /* Section Headers - text in a column, in the left */
 
-.section-header-left h1, h2, h3 {
+.section-header-left h1, h2, h3, p {
     display: flex;
     padding: 50px;
     flex-direction: column; 
@@ -512,6 +371,24 @@ img {
     font-style: italic;
     font-weight: lighter;
     font-family: monospace;
+}
+
+.section-header-left p {
+    font-size: 20px;
+    margin: 10;
+    padding: 5px;
+    /* font-style: italic; */
+    font-weight: lighter;
+    /* font-family: monospace; */
+}
+
+.left-element ul {
+    font-size: 20px;
+    margin: 10;
+    padding: 5px;
+    /* font-style: italic; */
+    font-weight: lighter;
+    /* font-family: monospace; */
 }
 
 .section-padding {

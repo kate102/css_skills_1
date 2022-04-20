@@ -209,6 +209,10 @@ img {
     background-color: teal;
     border: none;
     border-radius: 5px; /* makes the edges curved */
+    margin-right: 3pc;
+    margin-left: 3pc;
+    /* margin-top: 3pc; */
+    margin-bottom: 3pc;
 }
 
 .btn:hover {
@@ -437,7 +441,7 @@ img {
 /* Section Headers - text in a column, in the center */
 .section-header {
     display: flex;
-    padding: 30px;
+    padding: 50px;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
@@ -449,6 +453,19 @@ img {
     margin: 20px 0;
 }
 
+.center-element {
+    display: flex;
+    padding: 50px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.center-element h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
 .h3 {
     font-family: "Trebuchet MS";
     font-size: 20px;   
@@ -466,7 +483,7 @@ img {
 
 .section-header-left h1, h2, h3 {
     display: flex;
-    padding: 30px;
+    padding: 50px;
     flex-direction: column; 
     /* align-items: left; */
     justify-content: left;
@@ -616,4 +633,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+
+  text-up {
+      
   }

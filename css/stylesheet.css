@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #333;
     color: #fff;
-    line-height: 1.6;
+    /* line-height: 1.6; */
 }
 
 a {
@@ -21,17 +21,21 @@ a {
 
 h1 {
     font-weight: 500;
-    line-height: 1.8;
-    font-size: 50px;
+    /* line-height: 1; */
+    /* font-size: 50px; */
 }
 
 h2 {
     font-weight: 300;
-    line-height: 1.2;
+    /* line-height: 0.9; */
+    /* font: italic; */
+    color: teal;
 }
 
 p {
     margin: 10px 0; /* Add margin back in because it is removed above */
+    /* font-size-adjust: inherit; */
+    font-style: italic;
 }
 
 img {
